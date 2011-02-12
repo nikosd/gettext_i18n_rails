@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     "init.rb",
     "lib/gettext_i18n_rails.rb",
     "lib/gettext_i18n_rails/action_controller.rb",
-    "lib/gettext_i18n_rails/active_record.rb",
+    "lib/gettext_i18n_rails/active_model.rb",
     "lib/gettext_i18n_rails/backend.rb",
     "lib/gettext_i18n_rails/haml_parser.rb",
     "lib/gettext_i18n_rails/html_safe_translations.rb",
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "lib/gettext_i18n_rails/tasks.rb",
     "lib/tasks/gettext_rails_i18n.rake",
     "spec/gettext_i18n_rails/action_controller_spec.rb",
+    "spec/gettext_i18n_rails/active_model_spec.rb",
     "spec/gettext_i18n_rails/active_record_spec.rb",
     "spec/gettext_i18n_rails/backend_spec.rb",
     "spec/gettext_i18n_rails/string_interpolate_fix_spec.rb",
@@ -43,6 +44,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Simple FastGettext Rails integration.}
   s.test_files = [
     "spec/gettext_i18n_rails/action_controller_spec.rb",
+    "spec/gettext_i18n_rails/active_model_spec.rb",
     "spec/gettext_i18n_rails/active_record_spec.rb",
     "spec/gettext_i18n_rails/backend_spec.rb",
     "spec/gettext_i18n_rails/string_interpolate_fix_spec.rb",

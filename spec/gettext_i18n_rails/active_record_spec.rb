@@ -36,7 +36,7 @@ describe ActiveRecord::Base do
 
   describe :human_name do
     it "is translated through FastGettext" do
-      CarSeat.should_receive(:_).with('car seat').and_return('Autositz')
+      FastGettext.stub!(:current_repository).and_return('Car seat'=>"Autositz")
       CarSeat.human_name.should == 'Autositz'
     end
   end

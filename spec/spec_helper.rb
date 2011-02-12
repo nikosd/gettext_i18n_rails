@@ -2,6 +2,7 @@ require 'rubygems'
 $LOAD_PATH << File.expand_path("../lib", File.dirname(__FILE__))
 
 require 'active_support'
+require 'active_model'
 require 'active_record'
 require 'action_controller'
 require 'action_mailer'
