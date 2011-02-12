@@ -3,10 +3,7 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.rspec_opts = '--backtrace --color'
 end
   
-task :default do
-  puts `rake spec VERSION=2.3.10 RSPEC_COLOR=1`
-  puts `rake spec VERSION=3.0.3 RSPEC_COLOR=1`
-end
+task :default => :spec
 
 begin
   require 'jeweler'
